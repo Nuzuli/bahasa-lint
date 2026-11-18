@@ -1,0 +1,11 @@
+{
+  "name": "bahasa-lint",
+  "version": "0.1.0",
+  "description": "Linter ejaan dan gaya bahasa Indonesia untuk dokumentasi Markdown",
+  "bin": { "bahasa-lint": "bin/bahasa-lint.js" },
+  "main": "src/lint.js",
+  "scripts": { "test": "node --test" },
+  "engines": { "node": ">=18" },
+  "keywords": ["lint", "bahasa-indonesia", "kbbi", "puebi", "markdown"],
+  "license": "MIT"
+}
