@@ -1,0 +1,23 @@
+{
+  "tidak-baku": {
+    "analisa": "analisis", "aktifitas": "aktivitas", "apotik": "apotek", "atlit": "atlet",
+    "azas": "asas", "hakekat": "hakikat", "hapal": "hafal", "ijin": "izin",
+    "kwalitas": "kualitas", "kwantitas": "kuantitas", "merubah": "mengubah", "dirubah": "diubah",
+    "nafas": "napas", "obyek": "objek", "praktek": "praktik", "resiko": "risiko",
+    "sistim": "sistem", "silahkan": "silakan", "tehnik": "teknik", "tehnologi": "teknologi",
+    "trampil": "terampil", "ketrampilan": "keterampilan", "nasehat": "nasihat", "jaman": "zaman",
+    "komplit": "komplet", "konsekwen": "konsekuen", "kwitansi": "kuitansi", "mengkonsumsi": "mengonsumsi",
+    "mempengaruhi": "memengaruhi", "menterjemahkan": "menerjemahkan", "antri": "antre",
+    "standard": "standar", "frekwensi": "frekuensi", "prosentase": "persentase", "disamping": "di samping"
+  },
+  "informal": {
+    "gimana": "bagaimana", "nggak": "tidak", "gak": "tidak", "udah": "sudah", "banget": "sekali",
+    "emang": "memang", "kalo": "kalau", "yg": "yang", "dgn": "dengan", "utk": "untuk",
+    "krn": "karena", "tdk": "tidak", "sdh": "sudah", "jgn": "jangan", "bikin": "membuat"
+  },
+  "istilah-inggris": {
+    "download": "unduh", "upload": "unggah", "file": "berkas", "update": "perbarui",
+    "install": "pasang", "login": "masuk", "logout": "keluar", "email": "surel",
+    "browser": "peramban", "link": "tautan", "setting": "pengaturan"
+  }
+}
