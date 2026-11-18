@@ -1,5 +1,5 @@
 name: Lint dokumentasi
-on: [pull_request]
+on: [push, pull_request]
 jobs:
   bahasa-lint:
     runs-on: ubuntu-latest
