@@ -1,0 +1,34 @@
+use strict';
+const test = require('node:test');
+const assert = require('node:assert');
+const { lintText } = require('../src/lint');
+
+const rules = (t, c) => lintText(t, c).map((r) => r.rule);
+
+test('mendeteksi kata tidak baku', () => {
+  assert.deepStrictEqual(rules('Silahkan analisa resiko ini.'), ['kata-tidak-baku', 'kata-tidak-baku', 'kata-tidak-baku']);
+});
+
+test('tidak mendeteksi kata baku', () => {
+  assert.deepStrictEqual(rules('Silakan analisis risiko ini.'), []);
+});
+
+test('mengabaikan blok kode, kode inline, dan URL', () => {
+  const t = 'Teks `gak` biasa\n```\nsilahkan\n```\nhttps://x.com/analisa';
+  assert.deepStrictEqual(rules(t), []);
+});
+
+test('kata ulang dengan angka 2', () => {
+  assert.deepStrictEqual(rules('Banyak anak2 bermain'), ['kata-ulang-angka']);
+});
+
+test('posisi baris dan kolom akurat', () => {
+  const [r] = lintText('baris satu\nini gak oke');
+  assert.strictEqual(r.line, 2);
+  assert.strictEqual(r.col, 5);
+});
+
+test('config ignore dan disable', () => {
+  assert.deepStrictEqual(rules('buka file ini', { disable: ['istilah-inggris'] }), []);
+  assert.deepStrictEqual(rules('buka file ini', { ignore: ['file'] }), []);
+});
